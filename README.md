@@ -25,7 +25,7 @@ For training and testing follow the below steps:
 
   ### Run following command:
       
-     ```python train.py```
+     python train.py
      
    Now it train the models one by one.It first run the train_emotions() function of emotions.py file. Now it train the emotions folder images onto a pre-trained model VGG19 whose layers shown in below image:
    ![Image of VGG19](https://miro.medium.com/max/2408/1*6U9FJ_se7SIuFKJRyPMHuA.png)
@@ -40,7 +40,7 @@ For training and testing follow the below steps:
 
   ### Run following command:
   
-    ```python test.py```
+    python test.py
     
   It provide two options:
   
