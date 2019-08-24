@@ -4,7 +4,7 @@ Here i provide solution of tcs humain competition problem which is Face Recognit
 
 For training and testing follow the below steps:
   
-# Setp:1 Preprocess the Data
+## Setp:1 Preprocess the Data
   
   ### Run Following Command:
   ```
@@ -21,15 +21,45 @@ For training and testing follow the below steps:
   Now we have directories which contain all images to belonging to their classes.We can simply used it with keras flow_from_directory() function.
   
 
-# Step:2 Training the models
+## Step:2 Training the models
 
   ### Run following command:
       
-     '''python train.py'''
+     ```python train.py```
      
-   Now it train the models one by one.It first run the train_emotions() function of emotions.py file. Now it train the emotions folder images onto a pre-trained model VGG19.
+   Now it train the models one by one.It first run the train_emotions() function of emotions.py file. Now it train the emotions folder images onto a pre-trained model VGG19 whose layers shown in below image:
+   ![Image of VGG19](https://miro.medium.com/max/2408/1*6U9FJ_se7SIuFKJRyPMHuA.png)
    
+   train_emotions() function train the images with image augmentation techniques - for generating more images - and save the model in emotions.h5. It save with best weights by using ModelCheckPoint() function and ReduceLr of keras.
+   
+   Then it runs train_age(), train_ethnicity(), train_gender() function with same as above technique and save the model as age.h5, ethnicity.h5, gender.h5.
+   
+   ```You must train models with powerful GPU or colab ```
+   
+## Step:3 Testing the model:
+
+  ### Run following command:
+  
+    ```python test.py```
     
+  It provide two options:
+  
+     1.Predict from Image
+     2.Predict from Webcam
+   
+  If you want to predict emotions, age, ethnicity, gender from image choose option 1 or
+  If tou want to predict emotions, age, ethnicity, gender from webcam(real time) then choose option 2.
+  
+  If you choose option 1 it will be ask you to enter image name in this you must enter image path. Then it read image and load models and predict corresponding class labels then it write preidcted labels with rectangular box onto face in image and sshow you which is as below:
+  
+  ![Image of Input]
+  ![Image of Output]
+  
+  If you choose option 2 it open webcam and give frames into loaded models and predict class labels. It show you a window in which video will play with labels and rectangulr red box onto image. You can close it by simply pressing **esc** key
+  
+  
+  
+  
 
   
   
