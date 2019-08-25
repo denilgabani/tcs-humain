@@ -52,8 +52,16 @@ For training and testing follow the below steps:
   
   If you choose option 1 it will be ask you to enter image name in this you must enter image path. Then it read image and load models and predict corresponding class labels then it write preidcted labels with rectangular box onto face in image and sshow you which is as below:
   
-  ![Image of Input]
-  ![Image of Output]
+  <p align="center">
+  <img src="https://github.com/denilDG/tcs-humain/blob/master/Denil.JPG" width="350" alt="accessibility text">
+  </p>
+  <p align="center"><b>Input</b></p>
+  
+  
+  <p align="center">
+  <img src="https://github.com/denilDG/tcs-humain/blob/master/output.jpg" width="350" alt="accessibility text">
+  </p>
+  <p align="center"><b>Output</b></p>
   
   If you choose option 2 it open webcam and give frames into loaded models and predict class labels. It show you a window in which video will play with labels and rectangulr red box onto image. You can close it by simply pressing **esc** key
   
