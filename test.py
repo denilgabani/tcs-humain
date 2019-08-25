@@ -94,7 +94,6 @@ elif(opt==2):#if second option selected
                 			cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 255), 2)
                     
             cv2.imshow("Output", cv2.resize(frame,(500,500)))
-            
             k = cv2.waitKey(33)
             if k==27:#Close the window by pressing ESC key
                 break
