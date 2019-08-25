@@ -65,7 +65,7 @@ For training and testing follow the below steps:
   </p>
   <p align="center"><b>Output</b></p>
   
-  If you choose option 2 it open webcam and give frames into loaded models and predict class labels. It show you a window in which video will play with labels and rectangulr red box onto image. You can close it by simply pressing **esc** key
+  If you choose option 2 it open webcam and give frames into loaded models and predict class labels. It show you a window in which video will play with labels and rectangular red box onto image. You can close it by simply pressing **esc** key
   
   
   
