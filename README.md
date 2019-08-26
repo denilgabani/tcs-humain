@@ -2,6 +2,9 @@
 
 Here i provide solution of tcs humain competition problem which is Face Recognition- Identify Age, Emotion and Ethnicity of a person.
 
+**First make sure that you have installed all requriment libraries installed. For installing requirment libraries run following command:**
+  ```pip install -r requirements.txt```
+
 **If you want to directly test the model without training run the step 3 command and make sure you have downloaded all the weights file in same directory.**
 
 For training and testing follow the below steps:
