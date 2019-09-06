@@ -23,21 +23,21 @@ def download_img(data):
     main_path = 'images/extract/'
     if not os.path.exists(main_path):
         os.mkdir(main_path)
-    x=data.iloc[:,1]
+    x=data.iloc[:64,1]
     count=0
     for link in x:
         fn = main_path+str(count)+'.jpeg'
         urlretrieve(link, fn)
         print(fn)
         count+=1
-    '''#Here Same code written again because it drop connection after long time and give TimeOut Error
+    #Here Same code written again because it drop connection after long time and give TimeOut Error
     x=data.iloc[64:,1]
     count=64
     for link in x:
         fn = main_path+str(count)+'.jpeg'
         urlretrieve(link, fn)
         print(fn)
-        count+=1'''
+        count+=1
         
         
 
@@ -178,4 +178,5 @@ def run():
     
     data_preprocess(data)
 
+run()
 
